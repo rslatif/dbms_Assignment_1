@@ -1,4 +1,4 @@
-# Lab Report 02
+# Assignment 1 :
 **Course:** Database Management System  (CSEC-322)<br />
 **Lab-Report On :** Lab Aggregation Function
 ## Create and Use Database
