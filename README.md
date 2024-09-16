@@ -68,7 +68,7 @@ VALUES
 
 ```
 
-## Q1: Total number of performance reviews conducted
+## Question_1: Total number of performance reviews conducted
 ```sql
 SELECT COUNT(*) AS total_reviews
 FROM performance_reviews;
@@ -76,7 +76,7 @@ FROM performance_reviews;
 ### Output of Quesion_1
 ![Output of Q1](q_1.png)
 
-## Q2: Average salse performance score of all employees
+## Question_2: Average salse performance score of all employees
 ```sql
 SELECT AVG(sales_performance) AS average_sales_performance
 FROM performance_reviews;
@@ -84,7 +84,7 @@ FROM performance_reviews;
 ### Output of Quesion_2
 ![Output of Q2](q_2.png)
 
-## Q3: Highest customer feedback score
+## Question_3: Highest customer feedback score
 ```sql
 SELECT MAX(customer_feedback) AS highest_customer_feedback
 FROM performance_reviews;
@@ -92,7 +92,7 @@ FROM performance_reviews;
 ### Output of Quesion_3
 ![Output of Q3](q_3.png)
 
-## Q4: Total project completion score for each department
+## Question_4: Total project completion score for each department
 ```sql
 SELECT e_id, SUM(project_completion) AS total_project_completion
 FROM performance_reviews
@@ -101,7 +101,7 @@ GROUP BY e_id;
 ### Output of Quesion_4
 ![Output of Q4](q_4.png)
 
-## Q5: Average sales, customer feedback, and project completion scores for each department
+## Question_5: Average sales, customer feedback, and project completion scores for each department
 ```sql
 SELECT d_id,
        (SELECT d_name FROM departments WHERE departments.d_id = employees.d_id) AS department_name,
@@ -115,7 +115,7 @@ GROUP BY d_id;
 ### Output of Quesion_5
 ![Output of Q5](q_5.png)
 
-## Q6: Find the department with an average sales performance score greater than 80
+## Question_6: Find the department with an average sales performance score greater than 80
 ```sql
 SELECT e_id, AVG(sales_performance) AS average_sales_performance
 FROM performance_reviews
@@ -125,7 +125,7 @@ HAVING AVG(sales_performance) > 80;
 ### Output of Quesion_6
 ![Output of Q6](q_6.png)
 
-## Q7: Count the number of distinct review dates
+## Question_7: Count the number of distinct review dates
 ```sql
 
 SELECT COUNT(DISTINCT review_date) AS distinct_review_dates
@@ -134,7 +134,7 @@ FROM performance_reviews;
 ### Output of Quesion_7
 ![Output of Q7](q_7.png)
 
-## Q8: List all employee names along with their total number of reviews
+## Question_8: List all employee names along with their total number of reviews
 ```sql
 SELECT first_name, last_name, 
        (SELECT COUNT(*) 
@@ -146,7 +146,7 @@ FROM employees e;
 ### Output of Quesion_8
 ![Output of Q8](q_8.png)
 
-## Q9: Find the average sales performance and the total number of reviews for each department
+## Question_9: Find the average sales performance and the total number of reviews for each department
 ```sql
 SELECT d.d_name AS department_name,
        (SELECT AVG(pr.sales_performance)
