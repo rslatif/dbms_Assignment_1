@@ -1,6 +1,7 @@
-# Assignment 1 :
+# Lab Report 02
 **Course:** Database Management System  (CSEC-322)<br />
-**Assignment On :** Lab Aggregation Function
+** Assignment On : ** Lab Aggregation Function 
+
 ## Create and Use Database
 ```sql
 CREATE DATABASE dbms_assignment_1;
@@ -74,15 +75,15 @@ SELECT COUNT(*) AS total_reviews
 FROM performance_reviews;
 ```
 ### Output of Quesion_1
-![q_1](https://github.com/user-attachments/assets/149004d1-8825-411d-a353-d568d3c97d94)
+![Output of Q1](q_1.png)
+
 ## Q2: Average salse performance score of all employees
 ```sql
 SELECT AVG(sales_performance) AS average_sales_performance
 FROM performance_reviews;
 ```
 ### Output of Quesion_2
-![q_2](https://github.com/user-attachments/assets/57e02be3-a0bc-472e-9868-ac019b28e259)
-
+![Output of Q2](q_2.png)
 
 ## Q3: Highest customer feedback score
 ```sql
@@ -90,8 +91,7 @@ SELECT MAX(customer_feedback) AS highest_customer_feedback
 FROM performance_reviews;
 ```
 ### Output of Quesion_3
-![q_3](https://github.com/user-attachments/assets/65486a52-41c8-4037-bc07-7cd48c9aec20)
-
+![Output of Q3](q_3.png)
 
 ## Q4: Total project completion score for each department
 ```sql
@@ -100,8 +100,7 @@ FROM performance_reviews
 GROUP BY e_id;
 ```
 ### Output of Quesion_4
-![q_4](https://github.com/user-attachments/assets/0914183b-bdac-4ce0-bcb1-58ab9d6a3845)
-
+![Output of Q4](q_4.png)
 
 ## Q5: Average sales, customer feedback, and project completion scores for each department
 ```sql
@@ -115,8 +114,7 @@ GROUP BY d_id;
 
 ```
 ### Output of Quesion_5
-
-![q_5](https://github.com/user-attachments/assets/df1ac36f-157c-4f8d-9f79-d5ca52b82b43)
+![Output of Q5](q_5.png)
 
 ## Q6: Find the department with an average sales performance score greater than 80
 ```sql
@@ -126,8 +124,7 @@ GROUP BY e_id
 HAVING AVG(sales_performance) > 80;
 ```
 ### Output of Quesion_6
-
-![q_6](https://github.com/user-attachments/assets/a33e941e-b85c-43f6-81ac-f2968a35b4e8)
+![Output of Q6](q_6.png)
 
 ## Q7: Count the number of distinct review dates
 ```sql
@@ -136,8 +133,7 @@ SELECT COUNT(DISTINCT review_date) AS distinct_review_dates
 FROM performance_reviews;
 ```
 ### Output of Quesion_7
-
-![q_7](https://github.com/user-attachments/assets/e107aee0-7139-4f6f-987c-2a3a4f4402ab)
+![Output of Q7](q_7.png)
 
 ## Q8: List all employee names along with their total number of reviews
 ```sql
@@ -149,7 +145,7 @@ FROM employees e;
 
 ```
 ### Output of Quesion_8
-![111](https://github.com/user-attachments/assets/00134ff4-0b9a-441c-b7cb-2dcb25256a09)
+![Output of Q8](q_8.png)
 
 ## Q9: Find the average sales performance and the total number of reviews for each department
 ```sql
@@ -163,4 +159,4 @@ SELECT d.d_name AS department_name,
 FROM departments d;
 ```
 ### Output of Quesion_9
-![q_9](https://github.com/user-attachments/assets/4352c23e-40e0-46e6-aaf1-ea875274fa3d)
+![Output of Q9](q_9.png)
