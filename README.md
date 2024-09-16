@@ -1,7 +1,6 @@
 # Lab Report 02
 **Course:** Database Management System  (CSEC-322)<br />
-** Assignment On : ** Lab Aggregation Function 
-
+**Assignment On:** Lab Aggregation Function <br/>
 ## Create and Use Database
 ```sql
 CREATE DATABASE dbms_assignment_1;
