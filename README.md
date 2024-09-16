@@ -74,7 +74,7 @@ SELECT COUNT(*) AS total_reviews
 FROM performance_reviews;
 ```
 ### Output of Quesion_1
-![Output of Q1](q_1.png)
+![Output of Q1](Image/q_1.png)
 
 ## Question_2: Average salse performance score of all employees
 ```sql
@@ -90,7 +90,7 @@ SELECT MAX(customer_feedback) AS highest_customer_feedback
 FROM performance_reviews;
 ```
 ### Output of Quesion_3
-![Output of Q3](q_3.png)
+![Output of Q3](Image/q_3.png)
 
 ## Question_4: Total project completion score for each department
 ```sql
@@ -99,7 +99,7 @@ FROM performance_reviews
 GROUP BY e_id;
 ```
 ### Output of Quesion_4
-![Output of Q4](q_4.png)
+![Output of Q4](Image/q_4.png)
 
 ## Question_5: Average sales, customer feedback, and project completion scores for each department
 ```sql
@@ -113,7 +113,7 @@ GROUP BY d_id;
 
 ```
 ### Output of Quesion_5
-![Output of Q5](q_5.png)
+![Output of Q5](Image/q_5.png)
 
 ## Question_6: Find the department with an average sales performance score greater than 80
 ```sql
@@ -123,7 +123,7 @@ GROUP BY e_id
 HAVING AVG(sales_performance) > 80;
 ```
 ### Output of Quesion_6
-![Output of Q6](q_6.png)
+![Output of Q6](Image/q_6.png)
 
 ## Question_7: Count the number of distinct review dates
 ```sql
@@ -132,7 +132,7 @@ SELECT COUNT(DISTINCT review_date) AS distinct_review_dates
 FROM performance_reviews;
 ```
 ### Output of Quesion_7
-![Output of Q7](q_7.png)
+![Output of Q7](Image/q_7.png)
 
 ## Question_8: List all employee names along with their total number of reviews
 ```sql
@@ -144,7 +144,7 @@ FROM employees e;
 
 ```
 ### Output of Quesion_8
-![Output of Q8](q_8.png)
+![Output of Q8](Image/q_8.png)
 
 ## Question_9: Find the average sales performance and the total number of reviews for each department
 ```sql
@@ -158,4 +158,4 @@ SELECT d.d_name AS department_name,
 FROM departments d;
 ```
 ### Output of Quesion_9
-![Output of Q9](q_9.png)
+![Output of Q9](Image/q_9.png)
