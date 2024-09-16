@@ -82,7 +82,7 @@ SELECT AVG(sales_performance) AS average_sales_performance
 FROM performance_reviews;
 ```
 ### Output of Quesion_2
-![Output of Q2](q_2.png)
+![Output of Q2](Image/q_2.png)
 
 ## Question_3: Highest customer feedback score
 ```sql
